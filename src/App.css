@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.App .title{
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    opacity: .4;
+}

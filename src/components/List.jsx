@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import Contacts from "./Contacts";
+// import Contacts from "./Contacts";
 
 const List = ({ contatcs }) => {
-
   const [filterText, setFilterText] = useState("");
 
   const filtered = contatcs.filter((item) => {
@@ -20,11 +19,16 @@ const List = ({ contatcs }) => {
         onChange={(e) => setFilterText(e.target.value)}
       />
 
-      <ul>
+      <ul className="list">
         {filtered.map((contatc, index) => (
-          <li key={index}>{contatc.fullname}</li>
+          <li key={index}>
+            {" "}
+            <span>📞 {contatc.fullname}</span>
+            <span> ☎ {contatc.phone_number}</span>{" "}
+          </li>
         ))}
       </ul>
+      <p className="total">Total Contacts : {filtered.length}</p>
     </div>
   );
 };

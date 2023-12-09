@@ -32,7 +32,7 @@ const Form = ({addContacts,contatcs}) => {
   }
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className="form">
       <div>
         <input
           type="text"
@@ -54,7 +54,7 @@ const Form = ({addContacts,contatcs}) => {
           required
         />
       </div>
-      <div>
+      <div className="btn">
         <button>Add</button>
       </div>
     </form>
